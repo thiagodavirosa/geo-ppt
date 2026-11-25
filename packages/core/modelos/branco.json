@@ -1,0 +1,92 @@
+{
+ "schema": "geo-ppt/1.0",
+ "id": "modelo-branco",
+ "titulo": "Mapa",
+ "revisao": 1,
+ "modelo": "branco",
+ "tema": "dnit",
+ "tela": {
+  "largura": 1280,
+  "altura": 620,
+  "predefinicao": "larga",
+  "transparente": true,
+  "fundo": "#ffffff"
+ },
+ "enquadramento": {
+  "camadaId": "",
+  "campo": "",
+  "valor": "AM",
+  "recortar": true,
+  "vizinhas": false,
+  "corVizinhas": "#ececec",
+  "margem": 5,
+  "zoom": 100,
+  "deslocX": 0,
+  "deslocY": 0,
+  "ajuste": "auto",
+  "fixo": null,
+  "sombra": {
+   "ativa": true,
+   "distancia": 11,
+   "desfoque": 7,
+   "opacidade": 0.35
+  }
+ },
+ "rodovias": {
+  "camadaId": "",
+  "campoBr": "",
+  "campoUf": "",
+  "campoKmIni": "",
+  "campoKmFim": ""
+ },
+ "camadas": [],
+ "trechos": [],
+ "pontos": [],
+ "tabela": {
+  "visivel": false,
+  "x": null,
+  "y": null,
+  "colunas": [
+   {
+    "nome": "Rodovia",
+    "largura": 0,
+    "alinhamento": "centro"
+   },
+   {
+    "nome": "Contrato",
+    "largura": 0,
+    "alinhamento": "centro"
+   },
+   {
+    "nome": "Tipo",
+    "largura": 170,
+    "alinhamento": "centro"
+   },
+   {
+    "nome": "Extensão (km)",
+    "largura": 0,
+    "alinhamento": "centro"
+   },
+   {
+    "nome": "Situação",
+    "largura": 110,
+    "alinhamento": "centro"
+   }
+  ],
+  "linhas": [],
+  "estilo": {
+   "cabecalhoFundo": "#1f3864",
+   "cabecalhoTexto": "#ffffff",
+   "texto": "#222222",
+   "fundo": "#ffffff",
+   "zebra": "#eeeeee",
+   "divisoria": "#cccccc",
+   "borda": "#222222",
+   "espessuraBorda": 2,
+   "tamanhoFonte": 13,
+   "espacamento": 7,
+   "cabecalhoNegrito": true,
+   "sombra": true
+  }
+ }
+}

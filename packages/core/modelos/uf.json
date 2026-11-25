@@ -1,0 +1,249 @@
+{
+ "schema": "geo-ppt/1.0",
+ "id": "modelo-uf",
+ "titulo": "Mapa da UF",
+ "revisao": 1,
+ "modelo": "uf",
+ "tema": "dnit",
+ "tela": {
+  "largura": 1280,
+  "altura": 620,
+  "predefinicao": "larga",
+  "transparente": true,
+  "fundo": "#ffffff"
+ },
+ "enquadramento": {
+  "camadaId": "ibge-uf",
+  "campo": "sigla",
+  "valor": "AM",
+  "recortar": true,
+  "vizinhas": false,
+  "corVizinhas": "#ececec",
+  "margem": 5,
+  "zoom": 100,
+  "deslocX": 0,
+  "deslocY": 0,
+  "ajuste": "auto",
+  "fixo": null,
+  "sombra": {
+   "ativa": true,
+   "distancia": 11,
+   "desfoque": 7,
+   "opacidade": 0.35
+  }
+ },
+ "rodovias": {
+  "camadaId": "snv",
+  "campoBr": "vl_br",
+  "campoUf": "sg_uf",
+  "campoKmIni": "vl_km_inic",
+  "campoKmFim": "vl_km_fina"
+ },
+ "camadas": [
+  {
+   "id": "ibge-uf",
+   "nome": "IBGE · Estados",
+   "tipo": "poligono",
+   "visivel": true,
+   "src": "SIRGAS 2000 (graus)",
+   "origem": {
+    "tipo": "catalogo",
+    "id": "ibge-uf",
+    "wfs": "",
+    "manual": false,
+    "arquivo": ""
+   },
+   "estilo": {
+    "preenchimento": "#d9d6ad",
+    "contorno": "#7b817c",
+    "opacidade": 1,
+    "espessura": 1.4,
+    "tamanho": 5,
+    "rotuloCampo": "",
+    "rotuloCor": "#333333",
+    "rotuloTamanho": 15
+   },
+   "filtro": {
+    "campo": "",
+    "valores": ""
+   }
+  },
+  {
+   "id": "hidro",
+   "nome": "Hidrografia",
+   "tipo": "linha",
+   "visivel": true,
+   "src": "SIRGAS 2000 (graus)",
+   "origem": {
+    "tipo": "catalogo",
+    "id": "hidro",
+    "wfs": "",
+    "manual": false,
+    "arquivo": ""
+   },
+   "estilo": {
+    "preenchimento": "#ffffff",
+    "contorno": "#a9d3d4",
+    "opacidade": 1,
+    "espessura": 1.8,
+    "tamanho": 5,
+    "rotuloCampo": "",
+    "rotuloCor": "#333333",
+    "rotuloTamanho": 15
+   },
+   "filtro": {
+    "campo": "",
+    "valores": ""
+   }
+  },
+  {
+   "id": "est",
+   "nome": "Malhas rodoviárias estaduais",
+   "tipo": "linha",
+   "visivel": true,
+   "src": "SIRGAS 2000 (graus)",
+   "origem": {
+    "tipo": "catalogo",
+    "id": "est",
+    "wfs": "",
+    "manual": false,
+    "arquivo": ""
+   },
+   "estilo": {
+    "preenchimento": "#ffffff",
+    "contorno": "#e2b48f",
+    "opacidade": 1,
+    "espessura": 1.1,
+    "tamanho": 5,
+    "rotuloCampo": "",
+    "rotuloCor": "#333333",
+    "rotuloTamanho": 15
+   },
+   "filtro": {
+    "campo": "",
+    "valores": ""
+   }
+  },
+  {
+   "id": "snv",
+   "nome": "DNIT · SNV (rodovias federais)",
+   "tipo": "linha",
+   "visivel": true,
+   "src": "SIRGAS 2000 (graus)",
+   "origem": {
+    "tipo": "catalogo",
+    "id": "snv",
+    "wfs": "",
+    "manual": false,
+    "arquivo": ""
+   },
+   "estilo": {
+    "preenchimento": "#ffffff",
+    "contorno": "#d9a181",
+    "opacidade": 1,
+    "espessura": 1.7,
+    "tamanho": 5,
+    "rotuloCampo": "",
+    "rotuloCor": "#333333",
+    "rotuloTamanho": 15
+   },
+   "filtro": {
+    "campo": "",
+    "valores": ""
+   }
+  },
+  {
+   "id": "ibge-mun",
+   "nome": "IBGE · Municípios",
+   "tipo": "ponto",
+   "visivel": true,
+   "src": "SIRGAS 2000 (graus)",
+   "origem": {
+    "tipo": "catalogo",
+    "id": "ibge-mun",
+    "wfs": "",
+    "manual": false,
+    "arquivo": ""
+   },
+   "estilo": {
+    "preenchimento": "#ffffff",
+    "contorno": "#3d3d3d",
+    "opacidade": 1,
+    "espessura": 1.6,
+    "tamanho": 4.5,
+    "rotuloCampo": "nome",
+    "rotuloCor": "#333333",
+    "rotuloTamanho": 15
+   },
+   "filtro": {
+    "campo": "",
+    "valores": ""
+   },
+   "municipios": {
+    "modo": "ponto",
+    "soPrincipais": true,
+    "principais": 8,
+    "rotularSoPrincipais": true,
+    "estiloPoligono": {
+     "preenchimento": "#ffffff",
+     "contorno": "#b5b09a",
+     "opacidade": 0,
+     "espessura": 0.7,
+     "tamanho": 5,
+     "rotuloCampo": "",
+     "rotuloCor": "#333333",
+     "rotuloTamanho": 13
+    }
+   }
+  }
+ ],
+ "trechos": [],
+ "pontos": [],
+ "tabela": {
+  "visivel": false,
+  "x": null,
+  "y": null,
+  "colunas": [
+   {
+    "nome": "Rodovia",
+    "largura": 0,
+    "alinhamento": "centro"
+   },
+   {
+    "nome": "Contrato",
+    "largura": 0,
+    "alinhamento": "centro"
+   },
+   {
+    "nome": "Tipo",
+    "largura": 170,
+    "alinhamento": "centro"
+   },
+   {
+    "nome": "Extensão (km)",
+    "largura": 0,
+    "alinhamento": "centro"
+   },
+   {
+    "nome": "Situação",
+    "largura": 110,
+    "alinhamento": "centro"
+   }
+  ],
+  "linhas": [],
+  "estilo": {
+   "cabecalhoFundo": "#1f3864",
+   "cabecalhoTexto": "#ffffff",
+   "texto": "#222222",
+   "fundo": "#ffffff",
+   "zebra": "#eeeeee",
+   "divisoria": "#cccccc",
+   "borda": "#222222",
+   "espessuraBorda": 2,
+   "tamanhoFonte": 13,
+   "espacamento": 7,
+   "cabecalhoNegrito": true,
+   "sombra": true
+  }
+ }
+}
